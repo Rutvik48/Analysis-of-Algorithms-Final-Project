@@ -31,13 +31,22 @@ Part c.
 	Pseudo Code (Order Statistic)
 	
 	findKthElement(arr, left, right,k)
+	
 		if(right-left+1>=k){ 
+		
 			indexPivot = partition(arr, left, right)
+			
 			if(indexPivot+1==k)
+			
 				return arr[indexPivot]
+				
 			if(indexPivot+1 > k) // k is inside the left subarray
+			
 				return findKthElement(arr,left,indexPivot-1,k)
+				
 			if (indexPivot+1<k) //k is inside the right sub-array
+			
 				return findKthElement(arr, indexPivot+1, right, k-indexPivot-1)
+				
 1.	For the Quick_Select we just pick a pivot randomly(inside the partition function we call random function).
 2.	For the Deterministic Solution  divide the original array of size n into n/5 sub-arrays. Then, we have to find the median of each sub-array and finally we will choose our pivot as a median of all these meadians.
