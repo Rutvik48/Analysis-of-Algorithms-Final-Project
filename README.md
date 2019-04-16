@@ -1,6 +1,5 @@
 # CSC-382-Final-Project
 Group project CSC382
-Group members: Asliddin Asliev, Rajan Patell, Junde Jiang
 
 Finding the kth smallest element using Order Statistic
 &
